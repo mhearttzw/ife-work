@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+       .red{
+       	background-color: red;
+       	width: 960px;
+       	height: 18px;
+       	margin: 0 auto;
+       }
+       .red1{
+            text-align: center;
+       	width: 100%;
+       	height: 18px;
+       }
+       .red1-inner{
+            display: inline-block;
+            width: 960px;
+            height: 18px;
+            background: red;
+       }
+       .row, .row1{
+            margin: 5px auto;
+       }
+       .row-a{
+            float: left;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+       }
+       .row-b{
+            margin-left: 50px; 
+            height: 50px;
+            background-color: blue;
+       }
+       .row-c{
+            width: 100%;
+            height: 50px;
+            background-color: yellow;
+       }
+       .row-main{
+            display: flex;
+       }
+       .row-a1{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+       }
+       .row-b1{
+            height: 50px;
+            flex: 1;
+            background-color: blue;
+       }
+       .row-c1{
+            width: 100%;
+            background-color: yellow;
+            height: 50px;
+       }
+       .main{
+         padding: 0 50px;
+       }
+       .b{
+       	float: left;
+       	position: relative;
+       	width: 100%;
+        min-height: 120px;
+        background: blue;
+       }
+       .a{
+       	float: left;
+       	position: relative;
+       	margin-left: -100%;
+       	width: 50px;
+       	left: -50px;
+       	min-height: 120px;
+       	background: red;
+       }
+       .c{
+       	float: left;
+       	position: relative;
+       	width: 50px;
+       	margin-left: -50px;
+       	right: -50px;
+       	min-height: 120px;
+       	background: green;
+       }
+       .a1{
+            float: left;
+            width: 50px;
+            min-height: 120px;
+            background-color: red;
+       }
+       .c1{
+            float: right;
+            width: 50px;
+            min-height: 120px;
+            background-color: green;
+       }
+       .b1{
+            margin: 0 50px;
+            min-height: 120px;
+            background-color: blue;
+       }
+       .main{
+            min-height: 120px;
+            margin: 5px auto;
+       }
+       .main1{
+            min-height: 120px;
+            margin: 5px auto;
+       }
+       .box{
+            overflow: hidden;
+            background: red;
+            margin-bottom: 10px;
+       }
+       .floatbox{
+            width: 150px;
+            height: 100px;
+            background: blue;
+            float: left;
+            margin: 10px;
+       }
+	</style>
+</head>
+<body>
+      <!--div居中两种方法-->
+	<div class="red"></div><br>
+	<div class="red1">
+         <div class="red1-inner"></div>     
+      </div>
+        
+      <!--圆角实现-->
+      
+      <!--两列布局两种方法-->
+      <div class="row">
+            <div class="row-a"></div>
+            <div class="row-b"></div>
+            <div class="row-c"></div>
+      </div>
+      <div class="row1">
+            <div class="row-main">
+                  <div class="row-a1"></div>
+                  <div class="row-b1"></div>
+            </div>
+            <div class="row-c1"></div>
+      </div>
+
+      <!--三列布局两种方法-->  
+	<div class="main">
+		<div class="b"></div>
+		<div class="a"></div>
+		<div class="c"></div>
+		
+	</div>
+	<div class="main1">
+            <div class="a1"></div>
+            <div class="c1"></div>
+            <div class="b1"></div>
+      </div>
+
+      <!--实现一个浮动布局，红色容器中每一行的蓝色容器数量随着浏览器宽度的变化而变化 -->
+      <div class="box">
+            <div class="floatbox"></div>
+            <div class="floatbox"></div>
+            <div class="floatbox"></div>
+            <div class="floatbox"></div>
+            <div class="floatbox"></div>
+            <div class="floatbox"></div>
+            <div class="floatbox"></div>
+      </div>
+</body>
+</html>
